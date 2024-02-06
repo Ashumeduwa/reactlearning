@@ -1,19 +1,23 @@
 import React, { useState } from "react";
-import AccountClass from "./AccountsClass";
+// import AccountClass from "./AccountsClass";
 // import {Account} from "./Account";
-import {InputData} from "./Input";
-import Form from "./Form";
+// import {InputData} from "./Input";
+// import Form from "./Form";
+import CalculateData from "./Props"
 import './App.css';
 
 
 // this to validate the forms
+const random = ()=>{
+  return Math.random()
+}
 
 function App() {
   return (
-<Form />
-  )
+    <CalculateData random={random} />
+  );
 }
-export default App;
+export default App; 
 
 //data coming formt he inout.js , this is to get the inout from the user
 // function App() {
