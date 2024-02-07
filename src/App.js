@@ -5,6 +5,7 @@ import React, { useState } from "react";
 // import Form from "./Form";
 import CalculateData from "./Props"
 import './App.css';
+import MyApps from "./ClassProps";
 
 
 // this to validate the forms
@@ -14,7 +15,10 @@ const random = ()=>{
 
 function App() {
   return (
-    <CalculateData random={random} />
+    <div>
+    {/* <CalculateData random={random} /> */}
+    <MyApps value='something'/>
+    </div>
   );
 }
 export default App; 
