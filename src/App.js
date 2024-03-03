@@ -1,27 +1,33 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css'
 // import AccountClass from "./AccountsClass";
 // import {Account} from "./Account";
 // import {InputData} from "./Input";
 // import Form from "./Form";
-import CalculateData from "./Props"
-import './App.css';
-import MyApps from "./ClassProps";
-
-
+// import CalculateData from "./Props"
+// import './App.css';
+// import MyApps from "./ClassProps";
+// import EffectValue from "./UseEffect"
+// import BootStrap from "./bootStrap.js";
 // this to validate the forms
-const random = ()=>{
-  return Math.random()
-}
+import ChildCOmpinent from "./ChildComponent.js"
 
 function App() {
+
+  const printData = (data) => {
+    return (
+      <div>This data received form the parent component {data}</div>
+    )
+  }
+
   return (
     <div>
-    {/* <CalculateData random={random} /> */}
-    <MyApps value='something'/>
+      {/* <CalculateData random={random} /> */}
+      <ChildCOmpinent newData={printData} />
     </div>
   );
 }
-export default App; 
+export default App;
 
 //data coming formt he inout.js , this is to get the inout from the user
 // function App() {
